@@ -1,17 +1,23 @@
-import React, { Component, Fragment } from "react";
-import GlobalStyles from "styles/globals";
+import { connect } from "react-redux";
+import actions from "store/story/actions";
+import App from "./App";
 
-class App extends Component {
-  render() {
-    return (
-      <Fragment>
-        <GlobalStyles />
-        <div className="App">
-          <h2>Hacker News Clone</h2>
-        </div>
-      </Fragment>
-    );
-  }
-}
+const mapStateToProps = state => {
+  return {
+    stories: state.story.stories,
+    page: state.story.page,
+    storyIds: state.story.storyIds,
+    isFetching: state.story.isFetching
+  };
+};
 
-export default App;
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchStoriesFirstPage: () => dispatch(actions.fetchStoryIds())
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

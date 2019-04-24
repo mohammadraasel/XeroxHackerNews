@@ -1,9 +1,9 @@
 import { createStore } from "redux";
-import reducer from "./reducer";
+import rootReducer from "./reducer";
 import middleware from "./middleware";
 
 const configureStore = initialState => {
-  const store = createStore(reducer, initialState, middleware);
+  const store = createStore(rootReducer, initialState, middleware);
   return store;
 };
 
