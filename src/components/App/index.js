@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import actions from "store/story/actions";
+import { hasMoreStoriesSelector } from "store/story/selectors";
 import App from "./App";
 
 const mapStateToProps = state => {
@@ -7,13 +8,16 @@ const mapStateToProps = state => {
     stories: state.story.stories,
     page: state.story.page,
     storyIds: state.story.storyIds,
-    isFetching: state.story.isFetching
+    isFetching: state.story.isFetching,
+    hasMoreStories: hasMoreStoriesSelector(state)
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchStoriesFirstPage: () => dispatch(actions.fetchStoryIds())
+    fetchStoriesFirstPage: () => dispatch(actions.fetchStoryIds()),
+    fetchStories: ({ storyIds, page }) =>
+      dispatch(actions.fetchStories({ storyIds, page }))
   };
 };
 
