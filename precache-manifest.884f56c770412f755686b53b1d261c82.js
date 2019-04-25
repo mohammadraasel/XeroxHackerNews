@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/XeroxHackerNews/static/js/2.a17bcd12.chunk.js"
   },
   {
-    "revision": "485717a25fe53352d187a1b92373382f",
+    "revision": "dd6ab681eb8315a8edf8ff2c691e3d5a",
     "url": "/XeroxHackerNews/index.html"
   }
 ];
