@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/XeroxHackerNews/static/js/runtime~main.b3523195.js"
   },
   {
-    "revision": "941a2e10963b67f3c1ca",
-    "url": "/XeroxHackerNews/static/js/main.0e93ecae.chunk.js"
+    "revision": "60bc9d31fdb744eef9d0",
+    "url": "/XeroxHackerNews/static/js/main.f1bf5dea.chunk.js"
   },
   {
     "revision": "3af040b1eae6c2fcc41f",
     "url": "/XeroxHackerNews/static/js/2.a17bcd12.chunk.js"
   },
   {
-    "revision": "0475e6b891990303960cf53477d00959",
+    "revision": "485717a25fe53352d187a1b92373382f",
     "url": "/XeroxHackerNews/index.html"
   }
 ];
