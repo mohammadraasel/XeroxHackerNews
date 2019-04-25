@@ -26,7 +26,7 @@ class App extends Component {
         <ThemeProvider theme={colorsDark}>
           <div>
             <Wrapper>
-              <Title>Heacker News Reader</Title>
+              <Title>Hacker News Reader</Title>
               <InfiniteScroll
                 pageStart={0}
                 loadMore={this.fetchStories}
